@@ -6,7 +6,9 @@
     <?php
 
     echo $this->Html->css(array(
-        "/css/todomvc.css",
+        "bootstrap.min.css",
+        "app.css",
+        "todomvc.css",
     ));
 
     echo $this->Html->script(array(
@@ -25,6 +27,9 @@
     ?>
 </head>
 <body>
+
+<?php echo $this->Element('Navigation'); ?>
+
 <?php echo $this->fetch('content'); ?>
 </body>
 </html>
